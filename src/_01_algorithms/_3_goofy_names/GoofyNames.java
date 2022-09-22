@@ -19,7 +19,15 @@ System.out.println(x.toUpperCase());
 
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
-System.out.println(x.charAt(0));	
+for(int i = 0; i<x.length(); i++) {
+
+char z = x.charAt(i);
+if(i%2== 0) {
+	System.out.println(Character.toLowerCase(z));
+}
+else {
+	System.out.println(Character.toUpperCase(z));
+}
 				
 				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
 			
@@ -30,9 +38,8 @@ System.out.println(x.charAt(0));
 			
 				// 7. ADD the char to the end of the goofyName String
 
-		
+}
 		// 8. Use pop-up to show user their Goofy name
-
 	}
 }
 
