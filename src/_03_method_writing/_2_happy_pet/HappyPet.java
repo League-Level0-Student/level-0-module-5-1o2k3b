@@ -27,6 +27,7 @@ String x = JOptionPane.showInputDialog("what type of pet do you want to get");
 			// 6. Use user input to call the appropriate method created in step 5 below.
 if(happynessLevel==15) {
 	JOptionPane.showInputDialog("you are a good pet owner, you win :)(:");
+	break;
 }
 			// 7. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
@@ -63,6 +64,24 @@ if(happynessLevel==15) {
 	if(x.equals("guinea pig")){
 		if(task==2) {
 			walkGuineaPig();
+			System.out.println("0");
+		}
+	}
+	if(x.equals("cat")){
+		if(task==0 ) {
+			feedCat();
+			System.out.println("0");
+		}
+	}
+	if(x.equals("cat")){
+		if(task==1) {
+			petCat();
+			System.out.println("0");
+		}
+	}
+	if(x.equals("cat")){
+		if(task==2 ) {
+			walkCat();
 			System.out.println("0");
 		}
 	}
