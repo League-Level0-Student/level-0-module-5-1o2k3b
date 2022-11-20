@@ -7,17 +7,17 @@ public static void main(String[] args) {
 Robot rob = new Robot();
 rob.setSpeed(100);
 rob.penDown();
-rob.setX(50);
-rob.setY(540);
+rob.setX(150);
+rob.setY(270);
 String x = JOptionPane.showInputDialog("ask my robot rob to draw a square triangle or circle");
-if(x.equals("triangle")) {
+if(x.equalsIgnoreCase("triangle")) {
 	drawTriangle(rob, 100);
 }
-if(x.equals("square")) {
+if(x.equalsIgnoreCase("square")) {
 	drawSquare(rob, 100);
 }
-if(x.equals("circle")) {
-	drawCircle(rob, 100);
+if(x.equalsIgnoreCase("circle")) {
+	drawCircle(rob, 10);
 }
 }
 
